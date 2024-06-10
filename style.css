@@ -4,11 +4,6 @@
     box-sizing: border-box;
 }
 
-.main{
-    /* height: 605px; */
-    /* width: 1500px; */
-}
-
 .navbar{
     height: 60px;
     width: 100%;
@@ -16,8 +11,9 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 10px;
-    /* position: fixed; */
+    padding: 10px 25px;
+    position: sticky;
+    top: 0px;
 }
 
 ul,li{
@@ -26,8 +22,6 @@ ul,li{
 }
 .center{
     width: 65%;
-    /* border: 2px solid black; */
-
 }
 
 a{
@@ -42,16 +36,19 @@ a{
 .menu{
     display: flex;
     height: 100%;
-    /* width: 70%; */
-    /* flex-direction: row; */
     justify-content: space-between;
     align-items: center;
 }
 
 .Side{
-    height: 30px ;
+    height: 24px ;
 }
 
+.side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 #searchhh{
     padding-bottom: 2px;
     background-color: white;
@@ -88,18 +85,6 @@ input:focus{
     box-shadow: none;
 }
 
-
-/* .upper-container{
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    /* padding-top: 100px; 
-    top: 100px;
-    left: 30px;
-    right: 30px;
-} */
-
 .imaghe{
     height: 250px;
     width: 400px;
@@ -110,37 +95,31 @@ input:focus{
     width: 700px;
     border-radius: 17px;
     text-align: left;
-    padding: 12px;
+    padding: 18px;
     background-color: #e5d8ff ;
     font-family: sans-serif;
     font-size: 16px;
 }
 .container{
- /* height: 800px; */
- border: 2px solid red;
  padding: 20px;
-
 }
 
 .upper-container{
     height: 320px;
     width: 100%;
     display: flex;
-    /* border: 2px solid; */
     justify-content: space-around;
     align-items: center;
-    /* gap: 50px; */
 }
 
 .mid-container{
     display: flex;
-    /* border: 2px solid; */
     height: 150px;
     align-items: center;
     justify-content: space-around;
 }
 
-.box{
+.box {
     height: 100px;
     width: 220px;
     color: #FFFFFF;
@@ -151,6 +130,8 @@ input:focus{
     align-items: center;
     justify-content: space-around;
     font-size: 25px;
+    border-radius: 18px;
+    box-shadow: 3px 6px 5px lightgrey;
 }
 
 #box1{
@@ -173,9 +154,9 @@ input:focus{
     display: flex;
     background-color: #483EFF;
     justify-content: space-around;
-    padding: 20px;
-    border: 2px solid;
-
+    padding: 20px 40px;
+    height: 250px;
+    font-family: sans-serif;
 }
 
 .cont-left{
@@ -183,19 +164,91 @@ input:focus{
     flex-direction: column;
     width: 30%;
     justify-content: space-between;
-
+    height: 190px;
+    padding-top: 10px;
 }
 
-.cont-right{
+.cont-right {
     width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    background-color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
 }
 
 .data {
     display: flex;
-    width: 200px;
-    height: 30px;
-    border: 1px solid;
+    width: 70%;
+    height: 25%;
+    border: 1.5px solid white;
     align-items: center;
     justify-content: center;
+    border-radius: 6px;
+    color: white;
+    padding: 2px 3px;
 }
 
+.info{
+    color: #000000;
+    background-color: #bce0f6;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 60%;
+    padding: 3px 15px;
+    font-size: 14px;
+}
+
+.identity{
+ display: flex;
+ gap: 10px;
+}
+
+.first{
+    font-weight: 700;
+}
+
+.next{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nxt {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: white;
+    height: 30px;
+    width: 100px;
+    justify-content: center;
+    gap:6px;
+    border-radius: 5px;
+}
+
+.arrow {
+    width: 18px;
+    height: 10px;
+}
+
+.support{
+    position: fixed;
+    top: 420px;
+    right: 41px;
+    height: 100px;
+}
+
+.socialll{
+    height: 120px;
+}
+
+.social{
+    position: fixed;
+    right: 5px;
+    top: 30%;
+}
